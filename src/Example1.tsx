@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { ToggleOpenButton } from "./ToggleOpenButton";
 
 const variants = {
   visible: { opacity: 1, scale: 1 },
@@ -11,13 +12,10 @@ export const Example1 = () => {
 
   return (
     <div>
-      <motion.button
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 1.1 }}
+      <ToggleOpenButton
+        isOpen={isOpen}
         onClick={() => setIsOpen((value) => !value)}
-      >
-        Toggle
-      </motion.button>
+      />
       <AnimatePresence>
         {isOpen && (
           <motion.div
