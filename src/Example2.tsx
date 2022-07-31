@@ -31,10 +31,7 @@ export const Example2 = () => {
 
   return (
     <div>
-      <ToggleOpenButton
-        isOpen={isOpen}
-        onClick={() => setIsOpen((value) => !value)}
-      />
+      <ToggleOpenButton value={isOpen} onClick={setIsOpen} />
       <AnimatePresence>
         {isOpen && (
           <motion.ul

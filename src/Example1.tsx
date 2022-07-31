@@ -12,10 +12,7 @@ export const Example1 = () => {
 
   return (
     <div>
-      <ToggleOpenButton
-        isOpen={isOpen}
-        onClick={() => setIsOpen((value) => !value)}
-      />
+      <ToggleOpenButton value={isOpen} onClick={setIsOpen} />
       <AnimatePresence>
         {isOpen && (
           <motion.div
