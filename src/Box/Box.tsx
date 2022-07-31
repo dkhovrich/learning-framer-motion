@@ -1,13 +1,14 @@
+import "./styles.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { ToggleOpenButton } from "./ToggleOpenButton";
+import { ToggleOpenButton } from "../ToggleOpenButton";
 
 const variants = {
   visible: { opacity: 1, scale: 1 },
   hidden: { opacity: 0, scale: 0.5 }
 };
 
-export const Example1 = () => {
+export const Box = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

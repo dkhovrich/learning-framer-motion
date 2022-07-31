@@ -1,12 +1,12 @@
 import "./styles.css";
-import { Example1 } from "./Example1";
+import { Box } from "./Box/Box";
 import { Example2 } from "./Example2";
 
 export default function App() {
   return (
     <div className="App">
-      {/* <Example1 /> */}
-      <Example2 />
+      <Box />
+      {/* <Example2 /> */}
     </div>
   );
 }
